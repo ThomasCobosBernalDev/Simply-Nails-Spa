@@ -254,8 +254,23 @@ footer{padding:2rem 3rem;border-top:1px solid var(--bd);display:flex;align-items
   .ctmap{height:250px}
 
   /* Footer */
-  footer{flex-direction:column;gap:.8rem;text-align:center;padding:1.5rem}
+  footer{flex-direction:column;gap:.8rem;text-align:center;padding:1.5rem 1.5rem max(1.5rem,env(safe-area-inset-bottom))}
+
+  /* ─── iPhone notch / home bar safe areas ─── */
+  nav{
+    padding-left:max(1.2rem,env(safe-area-inset-left));
+    padding-right:max(1.2rem,env(safe-area-inset-right))
+  }
 }
+
+/* ══════════════════════════════════════════
+   iOS TOUCH POLISH
+   Removes tap flash, smooths scrolling
+══════════════════════════════════════════ */
+* { -webkit-tap-highlight-color: rgba(196,120,138,.1) }
+body { -webkit-overflow-scrolling: touch }
+.rvtrack { -webkit-overflow-scrolling: touch }
+.bp,.bo,.ncta,.nmob,.svccta,.bkopt,.bkbtn { touch-action: manipulation }
 
 /* ══════════════════════════════════════════
    RESPONSIVE — SMALL PHONES (≤ 390px)
@@ -319,19 +334,19 @@ footer{padding:2rem 3rem;border-top:1px solid var(--bd);display:flex;align-items
       <span class="gl">Nail Art</span>
     </div>
     <div class="gs">
-      <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=600&h=270&q=85" alt="Manicure" loading="lazy" onerror="this.style.display='none'">
+      <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=600&h=270&q=85" alt="Manicure" loading="lazy" onerror="this.style.display='none'">
       <span class="gl">Manicure</span>
     </div>
     <div class="gs">
-      <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=600&h=270&q=85" alt="Gel Nails" loading="lazy" onerror="this.style.display='none'">
-      <span class="gl">Gel Nails</span>
+      <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=600&h=270&q=85" alt="Nail Options" loading="lazy" onerror="this.style.display='none'">
+      <span class="gl">Nail Options</span>
     </div>
     <div class="gs">
-      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&h=270&q=85" alt="Pedicure" loading="lazy" onerror="this.style.display='none'">
+      <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=600&h=270&q=85" alt="Pedicure" loading="lazy" onerror="this.style.display='none'">
       <span class="gl">Pedicure</span>
     </div>
     <div class="gs">
-      <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=600&h=270&q=85" alt="Acrylics" loading="lazy" onerror="this.style.display='none'">
+      <img src="https://images.unsplash.com/photo-1599751449739-a84b4cf4c3b8?auto=format&fit=crop&w=600&h=270&q=85" alt="Acrylics" loading="lazy" onerror="this.style.display='none'">
       <span class="gl">Acrylics</span>
     </div>
   </div>
@@ -468,8 +483,8 @@ footer{padding:2rem 3rem;border-top:1px solid var(--bd);display:flex;align-items
       </div>
       <div class="ctmap">
         <iframe
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-95.8450%2C29.7750%2C-95.7950%2C29.8050&amp;layer=mapnik&amp;marker=29.7895%2C-95.8200"
-          allowfullscreen loading="lazy" title="Simply Nails & Spa Location">
+          src="https://maps.google.com/maps?q=Simply+Nails+%26+Spa+23945+Franz+Rd+D+Katy+TX+77493&output=embed&z=17"
+          allowfullscreen loading="lazy" title="Simply Nails & Spa on Google Maps">
         </iframe>
       </div>
     </div>
